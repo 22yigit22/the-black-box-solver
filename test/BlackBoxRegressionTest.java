@@ -1,5 +1,3 @@
-package tr.edu.ozyegin.cs101.blackbox;
-
 import java.util.Iterator;
 import java.util.Objects;
 

@@ -1,5 +1,3 @@
-package tr.edu.ozyegin.cs101.blackbox;
-
 public enum Direction {
     N(-1, 0), E(0, 1), S(1, 0), W(0, -1);
     private final int deltaRow;

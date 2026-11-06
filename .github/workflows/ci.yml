@@ -20,4 +20,4 @@ jobs:
           mkdir -p build
           javac --release 17 -d build $(find src test -name '*.java')
       - name: Run regression tests
-        run: java -cp build tr.edu.ozyegin.cs101.blackbox.BlackBoxRegressionTest
+        run: java -cp build BlackBoxRegressionTest

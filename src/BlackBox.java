@@ -1,5 +1,3 @@
-package tr.edu.ozyegin.cs101.blackbox;
-
 /**
  * Class representing a black box in
  * "The Black Box Game".

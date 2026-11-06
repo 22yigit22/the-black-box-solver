@@ -25,10 +25,10 @@ From the repository root:
 ```bash
 mkdir -p build
 javac --release 17 -d build $(find src -name '*.java')
-java -cp build tr.edu.ozyegin.cs101.blackbox.Game
+java -cp build Game
 ```
 
-In IntelliJ IDEA, open the root directory as a Java project, mark `src` as a Sources Root if needed, select JDK 17+, and run `tr.edu.ozyegin.cs101.blackbox.Game`.
+In IntelliJ IDEA, open the root directory as a Java project, mark `src` as a Sources Root if needed, select JDK 17+, and run `Game`.
 
 ## How to use
 
@@ -61,7 +61,7 @@ Self-contained regression tests run on the JDK without additional libraries:
 ```bash
 mkdir -p build
 javac --release 17 -d build $(find src test -name '*.java')
-java -cp build tr.edu.ozyegin.cs101.blackbox.BlackBoxRegressionTest
+java -cp build BlackBoxRegressionTest
 ```
 
 GitHub Actions runs the same tests on push and pull requests (`.github/workflows/ci.yml`).
@@ -69,7 +69,7 @@ GitHub Actions runs the same tests on push and pull requests (`.github/workflows
 ## Structure
 
 ```text
-src/tr/edu/ozyegin/cs101/blackbox/
+src/
   Game.java            CLI, candidate filtering, entropy-based probe selection
   BlackBox.java        Board and ball occupancy
   BlackBoxStream.java  Candidate configuration enumeration
@@ -77,10 +77,12 @@ src/tr/edu/ozyegin/cs101/blackbox/
   Location.java        Board coordinates
   EdgeLocation.java    Edge ports and directions
   Direction.java       Cardinal direction helpers
-test/tr/edu/ozyegin/cs101/blackbox/
+test/
   BlackBoxRegressionTest.java
 .github/workflows/ci.yml
 ```
+
+For this small, self-contained project, classes use Java's default package so source and test files can appear directly within `src/` and `test/`. Larger projects usually benefit from named packages and matching directory paths.
 
 ## Possible extensions
 

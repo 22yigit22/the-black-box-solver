@@ -1,5 +1,3 @@
-package tr.edu.ozyegin.cs101.blackbox;
-
 import java.util.Objects;
 
 /** Simulates a ray entering an 8x8 Black Box board. */

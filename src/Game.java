@@ -1,5 +1,3 @@
-package tr.edu.ozyegin.cs101.blackbox;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
