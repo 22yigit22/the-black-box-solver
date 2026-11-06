@@ -1,0 +1,23 @@
+# Java build outputs
+*.class
+/build/
+/out/
+/target/
+/.gradle/
+
+# IDE metadata
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# macOS files and archive metadata
+.DS_Store
+__MACOSX/
+
+# Environment and local data
+.env
+.env.*
+!.env.example
